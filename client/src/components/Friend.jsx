@@ -709,7 +709,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 //api call to add or remove friend.
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://baatcheet-backened-7.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
